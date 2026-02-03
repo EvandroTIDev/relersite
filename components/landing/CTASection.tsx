@@ -44,7 +44,7 @@ export function CTASection() {
 
                             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center pt-8">
                                 <Link
-                                    href="mailto:contato@evandroti.dev"
+                                    href="mailto:evandromarquesti@gmail.com"
                                     className="group relative px-12 py-6 bg-white text-black rounded-2xl font-black text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(255,255,255,0.1)]"
                                 >
                                     <span className="flex items-center gap-3">
@@ -52,21 +52,12 @@ export function CTASection() {
                                         FALAR COM UM EXPERT
                                     </span>
                                 </Link>
-
-                                <Link
-                                    href="https://github.com/EvandroTIDev/reler"
-                                    target="_blank"
-                                    className="group flex items-center gap-4 text-white font-bold text-lg hover:text-red-500 transition-all"
-                                >
-                                    Documentação Técnica
-                                    <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                                </Link>
                             </div>
 
                             <div className="pt-16 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
                                 <Badge text="Android 10+" />
                                 <Badge text="Custom Engine" />
-                                <Badge text="Enterprise API" />
+                                <Badge text="Enterprise Ready" />
                                 <Badge text="SLA 99.9%" />
                             </div>
                         </div>
