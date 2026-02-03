@@ -16,7 +16,7 @@ export function HeroSection() {
 
     const itemVariants = {
         hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] } } // easeOutCubic approximation
     };
 
     return (
@@ -39,7 +39,7 @@ export function HeroSection() {
                         {/* 1. Right Top Badge */}
                         <motion.div
                             animate={{ y: [0, -10, 0] }}
-                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            transition={{ duration: 4, repeat: Infinity, ease: [0.42, 0, 0.58, 1] }}
                             className="absolute top-16 -left-4 md:-left-24 z-50 pointer-events-none"
                         >
                             <FloatingBadge
@@ -52,7 +52,7 @@ export function HeroSection() {
                         {/* 2. Left Middle Badge (NEW) */}
                         <motion.div
                             animate={{ x: [0, -5, 0] }}
-                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+                            transition={{ duration: 5, repeat: Infinity, ease: [0.42, 0, 0.58, 1], delay: 1.5 }}
                             className="absolute top-1/2 -left-8 md:-left-32 z-40 pointer-events-none hidden md:block" // Hidden on mobile to avoid clutter
                         >
                             <div className="glass-card p-3 rounded-2xl flex items-center gap-3 border-white/5 bg-black/20 shadow-xl backdrop-blur-md">
@@ -69,7 +69,7 @@ export function HeroSection() {
                         {/* 3. Right Bottom Badge (Latência) */}
                         <motion.div
                             animate={{ x: [0, 5, 0] }}
-                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                            transition={{ duration: 6, repeat: Infinity, ease: [0.42, 0, 0.58, 1], delay: 0.5 }}
                             className="absolute bottom-32 -right-6 md:-right-28 z-40 pointer-events-none hidden md:block"
                         >
                             <div className="glass-card p-3 rounded-2xl flex items-center gap-3 border-white/5 bg-black/20 shadow-xl backdrop-blur-md">

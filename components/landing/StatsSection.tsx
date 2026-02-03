@@ -65,7 +65,7 @@ export function StatsSection() {
                                             initial={{ strokeDasharray: "440", strokeDashoffset: "440" }}
                                             whileInView={{ strokeDashoffset: (440 - (440 * stat.progress)).toString() }}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 2, ease: "easeOut" }}
+                                            transition={{ duration: 2, ease: [0, 0, 0.2, 1] }}
                                         />
                                     </svg>
                                     <div className="absolute inset-0 flex flex-col items-center justify-center">
