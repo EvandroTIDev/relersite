@@ -60,8 +60,8 @@ export function HeroSection() {
                                     <Activity className="w-4 h-4 text-red-500" />
                                 </div>
                                 <div className="pr-2">
-                                    <div className="text-[10px] text-gray-400 font-bold uppercase">Uptime</div>
-                                    <div className="text-sm font-black text-white">99.98%</div>
+                                    <div className="text-[10px] text-gray-900 font-bold uppercase">Uptime</div>
+                                    <div className="text-sm font-black text-black">99.98%</div>
                                 </div>
                             </div>
                         </motion.div>
@@ -77,8 +77,8 @@ export function HeroSection() {
                                     <Zap className="w-4 h-4 text-red-500" />
                                 </div>
                                 <div>
-                                    <div className="text-[10px] text-gray-400 font-bold uppercase">Latência</div>
-                                    <div className="text-sm font-black text-white">{'<'} 10ms</div>
+                                    <div className="text-[10px] text-gray-900 font-bold uppercase">Latência</div>
+                                    <div className="text-sm font-black text-black">{'<'} 10ms</div>
                                 </div>
                             </div>
                         </motion.div>
@@ -156,8 +156,8 @@ function FloatingBadge({ icon, text, subtext }: { icon: React.ReactNode, text: s
                 {icon}
             </div>
             <div>
-                <div className="text-sm font-black text-white leading-tight drop-shadow-lg">{text}</div>
-                <div className="text-[10px] font-bold text-gray-300 uppercase tracking-wider">{subtext}</div>
+                <div className="text-sm font-black text-black leading-tight drop-shadow-sm">{text}</div>
+                <div className="text-[10px] font-bold text-gray-900 uppercase tracking-wider">{subtext}</div>
             </div>
         </div>
     );
